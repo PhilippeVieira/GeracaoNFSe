@@ -1,4 +1,3 @@
-
 function calcularImpostos(valor, impostos) {
     return impostos.map(imp => ({nome: imp.nome, valor: (valor * imp.percentual / 100).toFixed(2)}));
 }
