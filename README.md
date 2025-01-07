@@ -4,8 +4,7 @@ Link para o site [[ ACESSAR ](https://main.dkife1rhl6lbv.amplifyapp.com)]
 
 ## Objetivo
 
-Desenvolver uma página HTML com JavaScript para permitir a emissão de uma **Nota Fiscal de Serviço (NFS-e)** com dados
-repassados pelo usuário. <br>
+Desenvolver uma página HTML com JavaScript para permitir a emissão de uma **Nota Fiscal de Serviço (NFS-e)** com dados repassados pelo usuário. <br>
 A seguir estão as principais funcionalidades da página e suas explicações:
 
 ### Dados Necessários
@@ -49,7 +48,6 @@ Após o cálculo dos impostos, a Nota Fiscal será gerada e exibida na própria 
 - **Total de Impostos**.
 - **Valor Líquido** (Valor da Venda - Total de Impostos).
 
-A Nota Fiscal será exibida de forma clara e organizada, permitindo que o usuário veja os cálculos realizados com base
-nos dados fornecidos.
+A Nota Fiscal será exibida de forma clara e organizada, permitindo que o usuário veja os cálculos realizados com base nos dados fornecidos.
 
 Por fim, será disponibilizado um botão para realizar o download da nota fiscal formatada (em formato txt).
