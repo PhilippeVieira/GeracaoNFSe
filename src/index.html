@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>OLÁ</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerador de NFS-e</title>
+        <!--suppress HtmlUnknownTarget -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h1>Emissão de Nota Fiscal de Serviço</h1>
+
+        <form id="formNFSe">
+            <label for="valorVenda">Valor da Venda:</label>
+            <input type="number" id="valorVenda" step="0.01" required>
+
+            <label for="itens">Itens Vendidos (descrição):</label>
+            <textarea id="itens" rows="3" required></textarea>
+
+            <label for="irpf">Imposto IRPF:</label>
+            <input type="number" id="irpf" step="0.01" required>
+
+            <label for="pis">Imposto PIS:</label>
+            <input type="number" id="pis" step="0.01" required>
+
+            <label for="cofins">Imposto COFINS:</label>
+            <input type="number" id="cofins" step="0.01" required>
+
+            <label for="inss">Imposto INSS:</label>
+            <input type="number" id="inss" step="0.01" required>
+
+            <label for="issqn">Imposto ISSQN:</label>
+            <input type="number" id="issqn" step="0.01" required>
+
+            <button type="button" id="btnGerar" onclick="validador()">Gerar Nota Fiscal</button>
+
+        </form>
+
+        <button type="button" id="btnEditar" hidden onclick="editarFormulario()">Editar Formulário</button>
+        <button type="button" id="btnBaixar" hidden>Baixar Nota Fiscal</button>
+
+        <div id="notaFiscal" class="notaFiscal" hidden></div>
+
+        <script src="script.js"></script>
+    </body>
 </html>

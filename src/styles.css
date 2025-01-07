@@ -1,0 +1,35 @@
+body {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.notaFiscal {
+    border: 1px solid #DDD;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #F9F9F9;
+}
